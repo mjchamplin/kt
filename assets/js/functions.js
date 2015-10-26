@@ -44,10 +44,12 @@ $(document).ready(function() {
             if(index == 4 && direction =='down'){
                 console.log("Going to content!");
                 $('.overlay').css('opacity', '1');
+                $('.interior-four').css('opacity','.5');
 
             }
             if(index == 5 && direction =='up'){
                 $('.overlay').css('opacity', '0');
+                $('.interior-four').css('opacity','1');
             }
         }
     });
