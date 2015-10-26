@@ -3,13 +3,13 @@ $(document).ready(function() {
         //verticalCentered: true,
         resize : true,
         sectionsColor : [],
-        anchors:['slideOne', 'slideTwo', 'slideThree', 'slideFour', 'slideFive'],
+        anchors:['home', 'copy', 'technical', 'creative', 'contact'],
         scrollingSpeed: 600,
         easing: 'easeOutExpo',
-        menu: '#menu',
+        menu: '.upper-nav',
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['slideOne', 'slideTwo', 'slideThree', 'slideFour'],
+        navigationTooltips: ['home', 'copy', 'technical', 'creative', 'contact'],
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
         loopBottom: false,
@@ -35,7 +35,20 @@ $(document).ready(function() {
         afterRender: function(){},
         afterResize: function(){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-        onSlideLeave: function(anchorLink, index, slideIndex, direction){}
+        onSlideLeave: function(anchorLink, index, slideIndex, direction){},
     
+            onLeave: function(index, nextIndex, direction){
+            var leavingSection = $(this);
+
+            //after leaving section 2
+            if(index == 4 && direction =='down'){
+                console.log("Going to content!");
+                $('.overlay').css('opacity', '1');
+
+            }
+            if(index == 5 && direction =='up'){
+                $('.overlay').css('opacity', '0');
+            }
+        }
     });
 });
