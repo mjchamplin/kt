@@ -31,12 +31,30 @@ body {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 22px;
   font-family: "lust-display", serif;
+}
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 32px;
+  }
 }
 
 p {
   margin-top: 0.7em;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  background: #50ce8e;
 }
 
 #head-nav-outer {

@@ -68,6 +68,34 @@ module.exports = function(grunt) {
       }
     },
     
+    secret: grunt.file.readJSON('secret.json'),
+    sftp: {
+      deploy: {
+        files: {
+          "./": "build/**"
+        },
+        options: {
+          path: '/var/www/html/',
+          host: '<%= secret.host %>',
+          username: '<%= secret.username %>',
+          password: '<%= secret.password %>',
+          showProgress: true,
+          srcBasePath: "build/",
+          createDirectories: true
+        }
+      }
+    },
+    sshexec: {
+      test: {
+        command: 'uptime',
+        options: {
+          host: '<%= secret.host %>',
+          username: '<%= secret.username %>',
+          password: '<%= secret.password %>'
+        }
+      }
+    },    
+    
     watch: {
       files: ['assets/css/*.sass'],
       tasks: ['sass']
@@ -80,8 +108,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-ssh');
 
   
   grunt.registerTask('default', ['sass:dist']);
   grunt.registerTask('build', ['clean', 'copy', 'sass:build','imagemin', 'uglify']);
+  grunt.registerTask('deploy', ['sftp']);
 };
