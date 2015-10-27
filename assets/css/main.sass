@@ -13,10 +13,14 @@ $acumin: 'acumin-pro', sans-serif
 body
   color: #fff
   font-family: $acumin
-  font-size: 18px
+  font-size: 14px
   background-image: url('/assets/img/bg.jpg')
   background-size: cover
-  font-size: 18px
+  @media screen and (min-width: 600px)
+    font-size: 16px
+  @media screen and (min-width: 1024px)
+    font-size: 18px
+
  
 .overlay
   width: 100%
