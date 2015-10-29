@@ -45,16 +45,26 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 18px;
+}
+@media screen and (min-width: 600px) {
+  h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 26px;
+  }
+}
+
 p {
   margin-top: 0.7em;
 }
 
 a {
   color: white;
-}
-
-a:hover {
-  background: #50ce8e;
 }
 
 #head-nav-outer {
@@ -110,7 +120,6 @@ a:hover {
 .section.five {
   min-height: 20%;
   background: white;
-  text-align: center;
   color: #26724b;
 }
 
@@ -137,6 +146,9 @@ a:hover {
   padding-left: 1em;
   padding-top: 1em;
 }
+.interior a:hover {
+  background: #50ce8e;
+}
 
 .interior-two {
   background: #318b5d;
@@ -149,6 +161,39 @@ a:hover {
 .interior-four {
   background: #50ce8e;
   transition: opacity 0.4s ease 0.05s;
+}
+
+.interior-five {
+  width: 100%;
+  max-width: 440px;
+  background: white;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+}
+.interior-five .contact-pic {
+  width: 25%;
+  float: left;
+}
+.interior-five .contact-pic .contact-pic-img {
+  border-radius: 50%;
+}
+.interior-five .contact-content {
+  width: 100%;
+  padding-left: 1em;
+  width: 75%;
+  float: left;
+}
+.interior-five .contact-content p {
+  margin-top: 0.5em;
+}
+.interior-five .contact-content a {
+  color: #26724b;
+  transition: color 0.2s ease 0.05s;
+}
+.interior-five .contact-content a:hover {
+  color: #47b07a;
+  background: none;
 }
 
 @media screen and (min-width: 600px) {
