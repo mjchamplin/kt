@@ -75,19 +75,20 @@ module.exports = function(grunt) {
           "./": "build/**"
         },
         options: {
-          path: '/var/www/html/',
+          path: 'public_html/',
           host: '<%= secret.host %>',
           username: '<%= secret.username %>',
           password: '<%= secret.password %>',
           showProgress: true,
           srcBasePath: "build/",
-          createDirectories: true
+          destBasePath: "public_html/",
+          //createDirectories: true
         }
       }
     },
     sshexec: {
       test: {
-        command: 'uptime',
+        command: 'cd && git pull && rsync',
         options: {
           host: '<%= secret.host %>',
           username: '<%= secret.username %>',
