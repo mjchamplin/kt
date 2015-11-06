@@ -57,6 +57,12 @@ module.exports = function(grunt) {
         src: ['reset.css'],
         dest: 'build/assets/css',
         expand: true
+      },
+      pdfs: {
+        cwd: 'assets/pdf/',
+        src: ['**/*.pdf'],
+        dest: 'build/assets/pdf',
+        expand: true
       }
     },
     
@@ -87,8 +93,8 @@ module.exports = function(grunt) {
       }
     },
     sshexec: {
-      test: {
-        command: 'cd && git pull && rsync',
+      deploy: {
+        command: 'cd public_html/app && git pull && rsync -avzh build/ ../',
         options: {
           host: '<%= secret.host %>',
           username: '<%= secret.username %>',
@@ -114,5 +120,6 @@ module.exports = function(grunt) {
   
   grunt.registerTask('default', ['sass:dist']);
   grunt.registerTask('build', ['clean', 'copy', 'sass:build','imagemin', 'uglify']);
-  grunt.registerTask('deploy', ['sftp']);
+  grunt.registerTask('deploy', ['sshexec']);
+  grunt.registerTask('ssh', ['sshexec']);
 };
