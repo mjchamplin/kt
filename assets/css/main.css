@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  color: white;
+  color: #fff;
   font-family: "acumin-pro", sans-serif;
   font-size: 14px;
   background-image: url("/assets/img/bg.jpg");
@@ -64,7 +64,7 @@ p {
 }
 
 a {
-  color: white;
+  color: #fff;
 }
 
 #head-nav-outer {
@@ -83,22 +83,22 @@ a {
   display: block;
   width: 25%;
   float: left;
-  background: white;
+  background: #fff;
   min-height: 35px;
   text-align: center;
   padding-top: 4px;
 }
 .upper-nav li.nav-1 {
-  background-color: #26724b;
+  background-color: #26724B;
 }
 .upper-nav li.nav-2 {
-  background-color: #318b5d;
+  background-color: #318B5D;
 }
 .upper-nav li.nav-3 {
-  background-color: #47b07a;
+  background-color: #47B07A;
 }
 .upper-nav li.nav-4 {
-  background-color: #50ce8e;
+  background-color: #50CE8E;
 }
 .upper-nav li.active {
   font-weight: bold;
@@ -119,13 +119,13 @@ a {
 
 .section.five {
   min-height: 20%;
-  background: white;
-  color: #26724b;
+  background: #fff;
+  color: #26724B;
 }
 
 .interior {
   width: 90vw;
-  background-color: #26724b;
+  background-color: #26724B;
   margin: 0 auto;
   padding: 2em;
 }
@@ -147,26 +147,26 @@ a {
   padding-top: 1em;
 }
 .interior a:hover {
-  background: #50ce8e;
+  background: #50CE8E;
 }
 
 .interior-two {
-  background: #318b5d;
+  background: #318B5D;
 }
 
 .interior-three {
-  background: #47b07a;
+  background: #47B07A;
 }
 
 .interior-four {
-  background: #50ce8e;
+  background: #50CE8E;
   transition: opacity 0.4s ease 0.05s;
 }
 
 .interior-five {
   width: 100%;
   max-width: 440px;
-  background: white;
+  background: #fff;
   margin: 0 auto;
   padding: 1em;
   text-align: center;
@@ -188,11 +188,11 @@ a {
   margin-top: 0.5em;
 }
 .interior-five .contact-content a {
-  color: #26724b;
+  color: #26724B;
   transition: color 0.2s ease 0.05s;
 }
 .interior-five .contact-content a:hover {
-  color: #47b07a;
+  color: #47B07A;
   background: none;
 }
 
@@ -222,3 +222,5 @@ a {
     margin-left: 75%;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
