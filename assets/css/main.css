@@ -89,16 +89,16 @@ a {
   padding-top: 4px;
 }
 .upper-nav li.nav-1 {
-  background-color: #26724B;
+  background-color: #87C7B9;
 }
 .upper-nav li.nav-2 {
-  background-color: #318B5D;
+  background-color: #98AC39;
 }
 .upper-nav li.nav-3 {
-  background-color: #47B07A;
+  background-color: #D6B021;
 }
 .upper-nav li.nav-4 {
-  background-color: #50CE8E;
+  background-color: #E69F8D;
 }
 .upper-nav li.active {
   font-weight: bold;
@@ -120,12 +120,12 @@ a {
 .section.five {
   min-height: 20%;
   background: #fff;
-  color: #26724B;
+  color: #87C7B9;
 }
 
 .interior {
   width: 90vw;
-  background-color: #26724B;
+  background-color: #87C7B9;
   margin: 0 auto;
   padding: 2em;
 }
@@ -147,19 +147,19 @@ a {
   padding-top: 1em;
 }
 .interior a:hover {
-  background: #50CE8E;
+  background: #E69F8D;
 }
 
 .interior-two {
-  background: #318B5D;
+  background: #98AC39;
 }
 
 .interior-three {
-  background: #47B07A;
+  background: #D6B021;
 }
 
 .interior-four {
-  background: #50CE8E;
+  background: #E69F8D;
   transition: opacity 0.4s ease 0.05s;
 }
 
@@ -188,11 +188,11 @@ a {
   margin-top: 0.5em;
 }
 .interior-five .contact-content a {
-  color: #26724B;
+  color: #87C7B9;
   transition: color 0.2s ease 0.05s;
 }
 .interior-five .contact-content a:hover {
-  color: #47B07A;
+  color: #D6B021;
   background: none;
 }
 

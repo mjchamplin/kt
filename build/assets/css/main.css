@@ -24,10 +24,10 @@ a { color: #fff; }
 #head-nav-inner { width: 100%; margin: 0 auto; }
 
 .upper-nav li { display: block; width: 25%; float: left; background: #fff; min-height: 35px; text-align: center; padding-top: 4px; }
-.upper-nav li.nav-1 { background-color: #26724B; }
-.upper-nav li.nav-2 { background-color: #318B5D; }
-.upper-nav li.nav-3 { background-color: #47B07A; }
-.upper-nav li.nav-4 { background-color: #50CE8E; }
+.upper-nav li.nav-1 { background-color: #87C7B9; }
+.upper-nav li.nav-2 { background-color: #98AC39; }
+.upper-nav li.nav-3 { background-color: #D6B021; }
+.upper-nav li.nav-4 { background-color: #E69F8D; }
 .upper-nav li.active { font-weight: bold; }
 .upper-nav li a { color: rgba(255, 255, 255, 0.9); text-decoration: none; }
 
@@ -35,27 +35,27 @@ a { color: #fff; }
 
 .wordmark { font-size: 2rem; font-weight: bold; }
 
-.section.five { min-height: 20%; background: #fff; color: #26724B; }
+.section.five { min-height: 20%; background: #fff; color: #87C7B9; }
 
-.interior { width: 90vw; background-color: #26724B; margin: 0 auto; padding: 2em; }
+.interior { width: 90vw; background-color: #87C7B9; margin: 0 auto; padding: 2em; }
 @media screen and (min-width: 600px) { .interior { width: 50%; margin: 0; height: auto; } }
 @media screen and (min-width: 1024px) { .interior { width: 25%; } }
 .interior ul { list-style-type: disc; padding-left: 1em; padding-top: 1em; }
-.interior a:hover { background: #50CE8E; }
+.interior a:hover { background: #E69F8D; }
 
-.interior-two { background: #318B5D; }
+.interior-two { background: #98AC39; }
 
-.interior-three { background: #47B07A; }
+.interior-three { background: #D6B021; }
 
-.interior-four { background: #50CE8E; transition: opacity 0.4s ease 0.05s; }
+.interior-four { background: #E69F8D; transition: opacity 0.4s ease 0.05s; }
 
 .interior-five { width: 100%; max-width: 440px; background: #fff; margin: 0 auto; padding: 1em; text-align: center; }
 .interior-five .contact-pic { width: 25%; float: left; }
 .interior-five .contact-pic .contact-pic-img { border-radius: 50%; }
 .interior-five .contact-content { width: 100%; padding-left: 1em; width: 75%; float: left; }
 .interior-five .contact-content p { margin-top: 0.5em; }
-.interior-five .contact-content a { color: #26724B; transition: color 0.2s ease 0.05s; }
-.interior-five .contact-content a:hover { color: #47B07A; background: none; }
+.interior-five .contact-content a { color: #87C7B9; transition: color 0.2s ease 0.05s; }
+.interior-five .contact-content a:hover { color: #D6B021; background: none; }
 
 @media screen and (min-width: 600px) { .interior-two { margin-left: 25%; }
   .interior-three { margin-left: 50%; }
