@@ -51,14 +51,8 @@ a { color: #fff; }
 .interior-three { background: #D6B021; }
 
 .interior-four { background: #E69F8D; transition: opacity 0.4s ease 0.05s; }
-
-.interior-five { width: 100%; max-width: 440px; background: #fff; margin: 0 auto; padding: 1em; text-align: center; }
-.interior-five .contact-pic { width: 25%; float: left; }
-.interior-five .contact-pic .contact-pic-img { border-radius: 50%; }
-.interior-five .contact-content { width: 100%; padding-left: 1em; width: 75%; float: left; }
-.interior-five .contact-content p { margin-top: 0.5em; }
-.interior-five .contact-content a { color: #87C7B9; transition: color 0.2s ease 0.05s; }
-.interior-five .contact-content a:hover { color: #D6B021; background: none; }
+.interior-four .contact-pic { width: 100%; max-width: 350px; margin: 0 auto; margin-bottom: 1em; }
+.interior-four .contact-pic .contact-pic-img { border-radius: 50%; }
 
 @media screen and (min-width: 600px) { .interior-two { margin-left: 25%; }
   .interior-three { margin-left: 50%; }
