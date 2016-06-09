@@ -144,7 +144,18 @@ a {
 .interior ul {
   list-style-type: disc;
   padding-left: 1em;
+}
+.interior .inline {
+  list-style-type: none;
+  padding: 0;
+}
+.interior .inline li {
+  display: inline;
+}
+.interior .label {
+  display: inline-block;
   padding-top: 1em;
+  font-weight: bold;
 }
 .interior a:hover {
   background: #E69F8D;

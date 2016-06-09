@@ -40,7 +40,10 @@ a { color: #fff; }
 .interior { width: 90vw; background-color: #87C7B9; margin: 0 auto; padding: 2em; }
 @media screen and (min-width: 600px) { .interior { width: 50%; margin: 0; height: auto; } }
 @media screen and (min-width: 1024px) { .interior { width: 25%; } }
-.interior ul { list-style-type: disc; padding-left: 1em; padding-top: 1em; }
+.interior ul { list-style-type: disc; padding-left: 1em; }
+.interior .inline { list-style-type: none; padding: 0; }
+.interior .inline li { display: inline; }
+.interior .label { display: inline-block; padding-top: 1em; font-weight: bold; }
 .interior a:hover { background: #E69F8D; }
 
 .interior-two { background: #98AC39; }
